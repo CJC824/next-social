@@ -12,6 +12,8 @@ export const switchFollow = async (userId: string) => {
     throw new Error("User is not authenticated!");
   }
 
+  
+  
   try {
     const existingFollow = await prisma.follower.findFirst({
       where: {
